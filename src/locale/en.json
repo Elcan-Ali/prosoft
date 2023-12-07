@@ -1,0 +1,38 @@
+{
+    "translation": {
+        "about": "About",
+        "services": "Services",
+        "projects": "Projects",
+        "blogs": "Blogs",
+        "contact": "Contact",
+        "to-apply": "To Apply",
+        "digital": "For the digital world",
+        "new-and-durable": "new and durable",
+        "it-solutions": "Development of IT solutions",
+        "why-do-they-choose-us": "Why do they choose us?",
+        "main-banner-text": "From startups to holdings, you can trust our professional team for the deployment of various complex IT products, and for the preparation of ready-to-use websites, mobile, or web applications",
+        "main-business-support1": "How do we support",
+        "main-business-support2": "your business?",
+        "main-business-support-item1": "Development of software solutions",
+        "main-business-support-item2": "Setup of electronic services",
+        "main-business-support-item3": "Creation of mobile applications and websites",
+        "main-business-support-item4": "Cloud technology services",
+        "main-business-support-card-title1": "Setting Business Goals",
+        "main-business-support-card-text1": "Together, we determine your product goals based on the needs of your business (customer) and future vision. We deliver solutions to users and offer solutions for future stages if needed.",
+        "main-business-support-card-title2": "Product Formation",
+        "main-business-support-card-text2": "We formalize the required solutions based on the Agile methodology.",
+        "main-business-support-card-title3": "Product Management",
+        "main-business-support-card-text3": "We provide solutions tailored to your user and, if necessary, create solutions for the future.",
+        "main-business-support-card-title4": "Prototype Creation",
+        "main-business-support-card-text4": "Based on your short and long-term goals, we prepare a clear business model. Identifying your needs, we formalize requirements and design with suitable solutions.",
+        "main-business-support-card-title5": "Product Deployment",
+        "main-business-support-card-text5": "We deploy your solutions according to your preferences, using an automated development pipeline or CI/CD.",
+        "all-services": "All services",
+        "all-projects":"All projects",
+        "our-customers":"Our customers",
+        "interesting-questions":"Questions that may interest you"
+
+
+
+    }
+}
