@@ -5,7 +5,7 @@ import ProjectsCategoryBtns from '../components/atoms/ProjectsCategoryBtns'
 import { getData } from '../service/getData'
 import ProjectItemSkeleton from '../components/skeleton/ProjectItemSkeleton'
 import { nanoid } from '@reduxjs/toolkit'
-import CategoryBtnsSkeleton from '../components/skeleton/categoryBtnsSkeleton'
+import { Skeleton } from '@mui/material'
 
 
 function ProjectContainer() {
@@ -45,7 +45,9 @@ function ProjectContainer() {
                 <div className='flex-between flex-wrap '>
                     <h2 className='text-[28px] md:text-[38px] lg:text-[48px] font-bold'>Layihələrimiz</h2>
                     {loading ?
-                        <CategoryBtnsSkeleton />
+                        <div className='gap-[15px] pt-[20px] flex flex-wrap'>
+                            {Array.from({ length: 4 }).map(_ => <Skeleton key={nanoid()} variant='rounded' height={"40px"} width={"100px"} />)}
+                        </div>
                         : <ProjectsCategoryBtns
                             loading={loading}
                             setLoading={setLoading}
