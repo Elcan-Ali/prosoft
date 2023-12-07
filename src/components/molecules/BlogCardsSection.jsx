@@ -5,7 +5,7 @@ import ArrowDown from "../../../public/img/arrow-down.svg"
 import { getData } from '../../service/getData'
 import { nanoid } from '@reduxjs/toolkit'
 import BlogCardSkeleton from '../skeleton/BlogCardSkeleton'
-import CategoryBtnsSkeleton from '../skeleton/categoryBtnsSkeleton'
+import { Skeleton } from '@mui/material'
 
 function BlogCardsSection({ activeCat, setActiveCat, search }) {
 
@@ -47,7 +47,9 @@ function BlogCardsSection({ activeCat, setActiveCat, search }) {
         <section className='container'>
             <div className='mb-[30px]'>
 
-                {loading ? <CategoryBtnsSkeleton /> : <BlogsCategoryBtns activeCat={activeCat} setActiveCat={setActiveCat} blogsCategories={blogsCategories} />}
+                {loading ? <div className='gap-[15px] pt-[20px] flex flex-wrap'>
+                    {Array.from({ length: 4 }).map(_ => <Skeleton key={nanoid()} variant='rounded' height={"40px"} width={"100px"} />)}
+                </div> : <BlogsCategoryBtns activeCat={activeCat} setActiveCat={setActiveCat} blogsCategories={blogsCategories} />}
             </div>
             <div className=' md:flex-row flex-col gap-y-[70px] md:gap-x-[50px] lg:gap-x-[122px] flex pb-[5w0px] items-start justify-center md:justify-normal flex-wrap'>
                 {
